@@ -1,6 +1,6 @@
 const targetSum = 2020
 
-const text = await Deno.readTextFile('input.txt')
+const text = (await Deno.readTextFile('input.txt')).trim()
 
 const numbers = text.split('\n').map(s => parseInt(s))
 

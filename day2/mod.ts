@@ -1,4 +1,4 @@
-const text = await Deno.readTextFile('input.txt')
+const text = (await Deno.readTextFile('input.txt')).trim()
 
 const records = text.split('\n')
 
